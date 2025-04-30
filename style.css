@@ -19,7 +19,13 @@ body {
     50% { transform: rotate(2deg); }
     100% { transform: rotate(-2deg); }
 }
-
+@keyframes animasi2cepat{
+    0%{ transform: rotate(0deg);}
+    25%{transform: rotate(3deg);}
+    50%{ transform: rotate(-3deg) ;}
+    75%{transform: rotate(1deg) ;}
+    100%{transform: rotate(0deg) ;}
+}
 
 
 header {
@@ -32,6 +38,8 @@ header {
     position:fixed;
     z-index: 1000;
     height: 75px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
 }
 nav a {
     float: left;
@@ -97,14 +105,14 @@ nav a:hover {
     margin-top: 20px;
     animation: animasi2 1s infinite;
     justify-content: center;
-    margin: 0px 350px;
+    margin: 0px 280px;
 }
 
 
 
 .about {
     background-color: rgb(0, 0, 0);
-    height: 705px;
+    height: 750px;
     padding: 30px;
     font-size: 30px;
     display: flex;
@@ -115,15 +123,15 @@ nav a:hover {
 .about div{
     color: rgb(255, 255, 255);
     text-align: justify;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .about div img{
-    height: 400px;
+    height: 320px;
     border-radius: 5px;
-
+    margin-top: 100px;
 }
 .about div img:hover{
-    animation: animasidikit 2s;
+    animation: animasi2cepat 1s;
 }
 
 
@@ -150,21 +158,24 @@ nav a:hover {
     color: black;
     background-color: white;
     scale: 140%;
-    margin-left:90px ;
-    margin-right:90px ;
+    margin-left:70px ;
+    margin-right:70px ;
 }
 .card:hover{
     scale: 150%;
     transition: 0.75s;
+    animation: animasi2cepat 1s ;
 }
 .card .gambar{
     position: absolute;
     width: 100%;
+    scale: 102%;
 }
 .card:hover .gambar img{
     scale: 1.2;
     filter: opacity(10%);
     transition: 0.5s;
+    
     }
 .card .gambar img{
     width: 100%;
@@ -214,7 +225,7 @@ nav a:hover {
 
 .contact {
     background-color: rgb(255, 187, 0);
-    height: 500px;
+    height: 480px;
     padding: 70px;
     justify-content: center;
     text-align: center;
